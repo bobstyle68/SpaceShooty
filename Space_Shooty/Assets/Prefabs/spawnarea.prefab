@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4644878211446738}
   - component: {fileID: 212206825449374082}
   - component: {fileID: 61710024890247478}
+  - component: {fileID: 114783948020259676}
   m_Layer: 0
   m_Name: spawnarea
   m_TagString: Untagged
@@ -66,6 +67,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &114783948020259676
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1143238150520448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99c49a9e939fd144982a9c57d14120ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectToBeSpawned: {fileID: 1510288355112598, guid: a366762151acf594597dcd5d86eb8a67,
+    type: 2}
+  spawnTime: 2
 --- !u!212 &212206825449374082
 SpriteRenderer:
   m_ObjectHideFlags: 1

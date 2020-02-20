@@ -23,6 +23,7 @@ public class EnemyController : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Kill")
         {
+            Debug.Log("Gnigger");
             Destroy(gameObject);
         }
     }

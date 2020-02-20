@@ -22,6 +22,9 @@ GameObject:
   - component: {fileID: 212067495243003474}
   - component: {fileID: 60131088449252914}
   - component: {fileID: 50983714157739618}
+  - component: {fileID: 114452810451115254}
+  - component: {fileID: 114420156516849434}
+  - component: {fileID: 114484258346095306}
   m_Layer: 0
   m_Name: ship
   m_TagString: Untagged
@@ -61,7 +64,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 6
 --- !u!60 &60131088449252914
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -115,6 +118,45 @@ PolygonCollider2D:
       - {x: 0.13, y: -0.575}
       - {x: 0.22999999, y: -0.575}
       - {x: 0.25, y: -0.555}
+--- !u!114 &114420156516849434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1536744587244404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91e7b7ceb81bce64eaa0f4da72f8897c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 400
+--- !u!114 &114452810451115254
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1536744587244404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9ce5c67a7d40664baf413fa79952051, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BulletObject: {fileID: 1920043102569916, guid: 174c67863a3656145baed6504b0b052c,
+    type: 2}
+--- !u!114 &114484258346095306
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1536744587244404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e574374356b0d54bb7169a8839ec8dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartingHealth: 100
+  Lives: 5
+  Ammo: 100
 --- !u!212 &212067495243003474
 SpriteRenderer:
   m_ObjectHideFlags: 1
